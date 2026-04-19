@@ -8,6 +8,7 @@
 
     <nav>
         <a href="{{ route('tasques.index') }}">Llistat</a> |
+        <a href="{{ route('categories.index') }}">Categories</a> |
         <a href="{{ route('tasques.create') }}">Nova tasca</a>
     </nav>
 

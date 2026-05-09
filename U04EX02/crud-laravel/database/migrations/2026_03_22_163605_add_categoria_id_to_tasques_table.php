@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::table('tasques', function (Blueprint $table) {
              $table->foreignId('categoria_id')->nullable()->constrained()->onDelete('set null');
-        });
+        }); //He afegit categoria_id a tasques, és nullable i té clau forana cap a categorias. Si s’elimina 
+            //una categoria, la tasca no s’elimina: la categoria passa a null.
     }
 
     /**

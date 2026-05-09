@@ -13,7 +13,7 @@ class Categoria extends Model
     ];
     public function tasques()
     {
-        return $this->hasMany(Tasca::class);
+        return $this->hasMany(Tasca::class); //Aquí tinc la relació 1 a molts: una categoria té moltes tasques
     }
 
 }
